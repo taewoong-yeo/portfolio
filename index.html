@@ -216,6 +216,36 @@
             color: rgb(74, 74, 74);
         }
 
+        .text {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .text a {
+            font-size: 16px;
+            font-family: 'Noto Sans KR', sans-serif;
+            position: relative;
+        }
+
+        .text a:hover {
+            font-weight: bold;
+        }
+
+        .text a:hover >div {
+            background-color: rgba(255, 255, 0, 0.462);
+        }
+
+        .text a>div {
+            width: 100%;
+            height: 5px;
+            background-color: rgba(255, 255, 0, 0.231);
+            top: 15px;
+            position: absolute;
+        }
+
     </style>
 </head>
 <body>
@@ -254,6 +284,7 @@
                     <p>영국의 오랜 전통을 지닌 테이블웨어 브랜드 덴비의  <br> 주 구매층인 젊은 부부들을 타겟으로 잡아 <br> 리뉴얼 한 브랜드 홈페이지입니다. <br> <br>
                     <b> 프로젝트 : 개인 프로젝트(기여도 100%) </b> <br>
                     적응형 (작업 기간 : 2주 소요)</p>
+
                 </div>
             </div>
             </a>
@@ -266,6 +297,12 @@
                     <p>부산 관광을 홍보하고 관광에 필요한 정보를 제공하는 <br> 부산관광공사의 홈페이지를 사용자들이 <br> 찾기 쉽게 정보를 가공하여 리뉴얼한 홈페이지입니다. <br> <br>
                     <b>프로젝트 : 팀 프로젝트(기여도 70%) / 팀 조장 </b> <br>
                     적응형 (작업 기간 : 6주 소요)</p>
+                    
+                    <div class="text">
+                    <a href="https://taewoong-yeo.github.io/visit-busan/" class="indexPage" target="_blank">인트로<div></div></a>
+                    <a href="https://taewoong-yeo.github.io/visit-busan-main/" class="mainPage" target="_blank">메인페이지 <div></div></a>
+                    <a href="https://taewoong-yeo.github.io/visit-busan-sub/" class="subPage" target="_blank">서브페이지 <div></div></a>
+                    </div>
                 </div>
 
                 <img src="img/portfolio2.png" alt="">
