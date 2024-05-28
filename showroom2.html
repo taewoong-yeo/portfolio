@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>사용성</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/showroom.css">
+    <link rel="icon" href="images/etc/Symbol_mono.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+</head>
+
+<body class="menu-usability">
+    <div class="uid-container">
+        <header class="uid-header">
+            <ul class="utillity-menu">
+                <li class="about"><a href="showroom.html">Portfolio</a></li>
+                <li class="demo"><a href="showroom2.html">Contact</a></li>
+            </ul>
+        </header>
+        <aside class="uid-sidebar">
+            <nav class="uid-navigation uid-nav-showroom">
+                <div class="nav-top">
+                    <strong>Contact</strong>
+                    <!-- <a href="../cl.html">현황판</a> -->
+                </div>
+                <div class="uid-nav-scroll">
+                    <ul>
+                        <li class="hide">
+                            <a href="showroom.html">
+                                <strong>Portfolio<span class="toggle-btn"></span></strong>
+                            </a>
+                        </li>
+                        <li class="hide">
+                            <strong>Contact<span class="toggle-btn"></span></strong>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="side-toggle-wrap">
+                <button class="side-toggle"></button>
+            </div>
+        </aside>
+
+        <!-- snb 메뉴 자리 -->
+        <main class="uid-main">
+            <h1 class="uid-title01">여태웅</h1>
+            <p class="uid-desc">숭실대학교 정보과학대학원 재학중<br>010-2428-9517</p>
+            <ul class="uid-list">
+                <li><a href="number_input.html">이력서 보기</a></li>
+                <li><a href="email.html">이메일로 연락하기</a></li>
+            </ul>
+        </main>
+        <footer class="uid-footer">
+            
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+
+    <!-- 코드하이라이트 기능 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+    <!-- 공통 -->
+    <script src="../js/app.js"></script>
+    <script>
+        const emailAutocompleteList = function() {
+            const emailDomainList = [
+                '@empas.com',
+                '@gmail.com',
+                '@hanmail.net',
+                '@kakao.com',
+                '@live.com',
+                '@nate.com',
+                '@naver.com',
+            ]
+
+            const emailListWrap = document.querySelector('.js-email-list');
+            if (emailListWrap) {
+                const inputText = emailListWrap.querySelector('.input-text');
+                const emailList = emailListWrap.querySelector('.email-list');
+                inputText.addEventListener('input', function(e) {
+                    const emailId = e.currentTarget.value;
+                    if (emailId.includes('@') || emailId == '') {
+                        emailList.style.display = 'none';
+                    } else {
+                        emailList.style.display = 'block';
+                    }
+                    emailList.innerHTML = '';
+                    emailDomainList.map(el => {
+                        const li = document.createElement('li');
+                        const buttonEl = document.createElement('button');
+                        buttonEl.textContent = emailId + el;
+                        li.append(buttonEl);
+                        buttonEl.addEventListener('click', function(event) {
+                            inputText.value = event.currentTarget.textContent;
+                            emailList.style.display = 'none';
+                            inputText.focus();
+                            event.preventDefault();
+                        })
+                        emailList.append(li)
+                    })
+                    e.preventDefault();
+                })
+            }
+        }
+
+        emailAutocompleteList()
+    </script>
+</body>
+
+</html>
