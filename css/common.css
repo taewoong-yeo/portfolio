@@ -1331,32 +1331,48 @@ body {
     background-image: url("https://taewoong-yeo.github.io/portfolio/img/EventPageThum.JPG");
 }
 
-.uid-main-summary>li.lotte .title::before {
-    background-image: url("https://taewoong-yeo.github.io/portfolio/img/EventPageThum.JPG");
+.uid-main-summary>li.lotte1 .title::before {
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/busan_festival.png");
+}
+
+.uid-main-summary>li.lotte2 .title::before {
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/busan_main.png");
+}
+
+.uid-main-summary>li.lotte3 .title::before {
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/auto_global1.png");
+}
+
+.uid-main-summary>li.lotte4 .title::before {
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/auto_global2.png");
 }
 
 .uid-main-summary>li.lx .title::before {
-    background-image: url("https://taewoong-yeo.github.io/portfolio/img/EventPageThum.JPG");
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/landnavi.png");
 }
 
 .uid-main-summary>li.platform .title::before {
-    background-image: url("https://taewoong-yeo.github.io/portfolio/img/EventPageThum.JPG");
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/gwangmyeong.png");
 }
 
 .uid-main-summary>li.dart .title::before {
-    background-image: url("https://taewoong-yeo.github.io/portfolio/img/EventPageThum.JPG");
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/dart.png");
 }
 
-.uid-main-summary>li.dart .title::before {
-    background-image: url("https://taewoong-yeo.github.io/portfolio/img/EventPageThum.JPG");
+.uid-main-summary>li.visit1 .title::before {
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/busan2.png");
 }
 
-.uid-main-summary>li.visit .title::before {
-    background-image: url("https://taewoong-yeo.github.io/portfolio/img/EventPageThum.JPG");
+.uid-main-summary>li.visit2 .title::before {
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/busan1.png");
+}
+
+.uid-main-summary>li.visit3 .title::before {
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/busan3.png");
 }
 
 .uid-main-summary>li.denby .title::before {
-    background-image: url("https://taewoong-yeo.github.io/portfolio/img/EventPageThum.JPG");
+    background-image: url("https://taewoong-yeo.github.io/portfolio/images/denby.png");
 }
 
 .uid-desc {
